@@ -1,6 +1,8 @@
 # MERN ThinkBoard
 This is a test project to learn MERN stack (**M**ongoDB, **E**xpress, **R**eact, **N**ode.js).
 
+It follows tutorial from: [freeCodeCamp.org](https://www.youtube.com/watch?v=F9gB5b4jgOI&t=7713s) | [burakorkmez/mern-thinkboard](https://github.com/burakorkmez/mern-thinkboard.git)
+
 ## Tools and Frameworks
 
 ### General
