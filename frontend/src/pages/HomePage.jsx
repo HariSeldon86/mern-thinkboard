@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import api from "../lib/axios.js";
-import toast from "react-hot-toast";
+import toast, { LoaderIcon } from "react-hot-toast";
 
 import Navbar from "../components/Navbar.jsx";
 import RateLimitedUI from "../components/RateLimitedUI.jsx";
@@ -41,7 +41,11 @@ const HomePage = () => {
       <Navbar />
       {isRateLimited && <RateLimitedUI />}
       <div className="max-w-7xl mx-auto p-4 mt-6">
-        {loading && <div className="text-center text-primary py-10">Loading notes...</div>}
+        {loading && (
+          <div className="min-h-screen bg-base-200 flex items-center justify-center">
+            <LoaderIcon className="animate-spin size-10" />
+          </div>
+        )}
 
         {notes.length === 0 && !isRateLimited && <NotesNotFound />}
 
